@@ -1,6 +1,6 @@
-def zeros(lst):
-    zero_count = lst.count(0)
-    while 0 in lst:
-        lst.remove(0)
-    for i in range(zero_count):
-        lst.append(0)
+number = 0
+while number <= 10:
+    number = number + 2
+    if number == 5:
+        break
+    print(number, end=’, ‘)
