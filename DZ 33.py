@@ -37,7 +37,7 @@ assert counter.get_current() == 10, "Test1"
 try:
     counter.step_up()  # ValueError
 except ValueError as e:
-    print(e)  # Досягнуто максимум
+    print(e)  # Досягнут максимум
 assert counter.get_current() == 10, "Test2"
 
 counter.set_min(7)
@@ -48,7 +48,7 @@ assert counter.get_current() == 7, "Test3"
 try:
     counter.step_down()  # ValueError
 except ValueError as e:
-    print(e)  # Досягнуто мінімум
+    print(e)  # Досягнут мінімум
 assert counter.get_current() == 7, "Test4"
 
 print("Всі тести пройдені успішно!")
