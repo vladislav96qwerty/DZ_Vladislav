@@ -114,7 +114,7 @@ if __name__ == "__main__":
         extra_student = Student("Male", 22, "Екстра", "Студент", "AN999")
         gr.add_student(extra_student)
     except GroupLimitException as e:
-        print(f"❌ Не вдалося додати екстра студента: {e}")
+        print(f"❌ Не вдалося додати  студента: {e}")
 
     print("\nТестування видалення та додавання нового студента:")
     gr.delete_student("Петренко")
